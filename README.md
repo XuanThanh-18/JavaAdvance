@@ -19,6 +19,7 @@ Design Patterns được chia thành 3 nhóm chính:
 ### 2️⃣ Structural Patterns (Mẫu cấu trúc)
 > Xác định cách các đối tượng kết hợp với nhau để tạo thành cấu trúc lớn hơn.
 - **Adapter** - Chuyển đổi interface của một class thành interface khác mà client mong muốn.
+Chuyê đổi hai hệ thống không tương thích lam việc với nhau.
 - **Bridge** - Tách abstraction khỏi implementation.
 - **Composite** - Nhóm nhiều object lại thành một cấu trúc cây.
 - **Decorator** - Mở rộng chức năng của object mà không thay đổi code gốc.
