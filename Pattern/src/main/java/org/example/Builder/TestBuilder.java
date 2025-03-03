@@ -21,5 +21,7 @@ public class TestBuilder {
         Person shortPerson2 = Person.getBuilder().setEmail("myemail@gmail.com").setPlace("Ha Noi").build();
         shortPerson2.toString();
 
+        Student student = Student.builder().name("John").id("123456").build();
+        System.out.println(student.toString());
     }
 }
