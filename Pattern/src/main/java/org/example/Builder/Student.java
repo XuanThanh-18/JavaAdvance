@@ -3,12 +3,13 @@ package org.example.Builder;
 import lombok.*;
 
 @Builder
-//@Getter
-//@Setter
+@Getter
+@Setter
 @AllArgsConstructor
-@Data
+@NoArgsConstructor
 public class Student {
-    private String name;
-    private int age;
-    private String id;
+    private int TT;
+    private String hoten;
+    private String lop;
+    private String diemTB;
 }

@@ -11,14 +11,21 @@ Design Patterns được chia thành 3 nhóm chính:
 ### 1️⃣ Creational Patterns (Mẫu khởi tạo)
 > Quản lý và tạo lập đối tượng một cách tối ưu.
 - **Singleton** - Đảm bảo chỉ có một instance của class tồn tại.
+--- Singleton không áp dụng cho model data vì nó chỉ tạo một đối tượng, nhưng table có nhiều => singleton thường dùng cho sẻvice
 - **Factory Method** - Tạo đối tượng thông qua một interface chung.
 - **Abstract Factory** - Nhóm các Factory Method liên quan.
+--- tao ra nhieu object cung loai
 - **Builder** - Tạo đối tượng phức tạp theo từng bước.
+--- => builder dùng cho data  model
+--- lommbok chỉ làm vc cho dât model
 - **Prototype** - Sao chép đối tượng thay vì tạo mới.
 
 ### 2️⃣ Structural Patterns (Mẫu cấu trúc)
 > Xác định cách các đối tượng kết hợp với nhau để tạo thành cấu trúc lớn hơn.
-- **Adapter** - Chuyển đổi interface của một class thành interface khác mà client mong muốn.
+- **Adapter** - Chuyển đổi interface của một class thành interface khác mà client mong muốn.  
+ Chuyê đổi hai hệ thống không tương thích lam việc với nhau  
+ maintain hệ thống  
+ 2 hệ thống ko tương thíc làm vc với nhau
 - **Bridge** - Tách abstraction khỏi implementation.
 - **Composite** - Nhóm nhiều object lại thành một cấu trúc cây.
 - **Decorator** - Mở rộng chức năng của object mà không thay đổi code gốc.
