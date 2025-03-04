@@ -5,20 +5,21 @@ package org.example;
  */
 public class App {
     public static void main(String[] args) throws InterruptedException {
-        //Thread.sleep(1000);  // ngu 1s roi chay ham main()
+        Thread.sleep(1000); //Ngung method main torng 1s
 
-        Thread thread1 = new ThreadExtends();
-        thread1.setName("Thread-1");
+        //Tao thread bang cach new class thread vua tao.
+        Thread thread = new ThreadExtends();
+        thread.setName("Thread-1");
 
-        Thread thread2 = new Thread(new ThreadRunable());
+        Thread thread2 = new Thread(new ThreadRunable(thread));
         thread2.setName("Thread-2");
 
-        thread1.start();
+        thread.start();
         thread2.start();
 
-        thread1.join();
+        thread.join();
         thread2.join();
 
-        System.out.println("Ket thuc");
+        System.out.println("Main thread stopped!");
     }
 }

@@ -1,11 +1,15 @@
 package org.example;
 
-public class ThreadExtends  extends Thread{
+public class ThreadExtends extends Thread {
     @Override
+    //Entry point cua thread - Khi thread start thi se chay vao ham nay.
     public void run() {
-        for(int i=2; i<=1000; i+=2){
-            if(Prime.isPrime(i)){
-                System.out.println(Thread.currentThread().getName()+  "Prime: "+ i);
+        for (int i = 0; i < 10; i++) {
+            System.out.println(Thread.currentThread().getName());
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
             }
         }
     }
